@@ -1,3 +1,4 @@
+//names
 //שמות המשתנים
 
 const express = require('express');
@@ -8,6 +9,7 @@ const app = express();
 app.use(bodyparser.urlencoded());
 app.use(bodyparser.json());
 
+app.listen(5000);
 const actionsRoute = require('./actions');
 app.use('/api',actionsRoute);
 
